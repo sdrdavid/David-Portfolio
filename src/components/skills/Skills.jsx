@@ -13,7 +13,8 @@ import {
   SiMongodb,
   SiExpress,
   SiFigma,
-  SiMysql
+  SiMysql,
+  SiTypescript
 
 } from "react-icons/si";
 import { GrCode, GrGithub } from "react-icons/gr";
@@ -24,7 +25,7 @@ import { IoLogoNodejs } from "react-icons/io";
 const Skills = ({ darkMode }) => {
   return (
     <div id="skills" className="bg-gradient-to-r from-[#014C47] via-[#0A7972] to-[#11A295] ">
-      <div className=" container m-auto -mt-9 md:-mt-24">   
+      <div className=" container m-auto md:py-2 sm:py-20 lg:py-2">   
         {/* heading */}
         <div data-aos="fade-up" className="relative mb-5">
           <h3 className=" text-3xl font-black text-white sm:text-2xl">
@@ -37,7 +38,7 @@ const Skills = ({ darkMode }) => {
           <div className="left flex-1 w-full">
             <p
               data-aos="fade-up"
-              className=" text-black font-medium w-[100%]"
+              className=" text-black font-medium text-lg w-[100%]"
             >
               Here are my skills.
             </p>
@@ -50,16 +51,13 @@ const Skills = ({ darkMode }) => {
                 <ProgressBar logo={<IoLogoHtml5 />} name={"HTML"} value={95} />
                 <ProgressBar logo={<IoLogoCss3 />} name={"CSS"} value={88} />
                 <ProgressBar
-                  logo={<FaBootstrap />}
-                  name={"Bootstrap"}
-                  value={94}
-                />
-                <ProgressBar
                   logo={<SiJavascript />}
                   name={"Javascript"}
                   value={80}
                 />
+               
                 <ProgressBar logo={<FaReact />} name={"React Js"} value={80} />
+                 <ProgressBar logo={<SiNextdotjs  />} name={"Next Js"} value={80} />
                 
               </div>
             </div>
@@ -82,10 +80,10 @@ const Skills = ({ darkMode }) => {
             </div>
             <div className="last2 flex flex-col gap-10">
               <SkillBox
-                logo={<SiFigma />}
+                logo={<SiTypescript />}
                 black={"black"}
                 white={"white"}
-                skill={"FIgma"}
+                skill={"Typescript"}
               />
               
                <SkillBox

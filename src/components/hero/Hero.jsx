@@ -18,48 +18,49 @@ import { Link, Navigate } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="bg-gradient-to-r from-[#014C47] via-[#0A7972] to-[#11A295]">
-      <div className=" container mx-auto pt-5 h-[750px] md:h-[100vh] md:flex-col-reverse sm:h-[780px]  flex sm:flex-col-reverse sm:pt-0 ">
-        <div className=" left mt-4 md:mt-0 flex-1 flex flex-col justify-center gap-5 w-1/2 md:w-full md:py-2 sm:py-0">
-          <div className="info w-fit flex flex-col items-start justify-center gap-3 sm:gap-2">
+    <div className="bg-gradient-to-r from-[#014C47] via-[#0A7972] to-[#11A295] ">
+      <div className=" container mx-auto pt-5 h-[720px] md:h-[100vh] md:flex-col-reverse sm:h-[480px]  flex sm:flex-col-reverse sm:pt-0 ">
+        <div className=" left   flex-1 flex flex-col justify-center lg:mt-20 md:mt-20  md:justify-start sm:mt-44 gap-5 w-1/2 md:w-full md:py-2 sm:py-0">
+          <div className="info w-fit flex flex-col items-start justify-center gap-3 sm:gap-2 sm:mt-5">
             <h2
               data-aos="fade-up"
-              className=" text-5xl font-bold sm:text-[2rem]"
+              className=" text-5xl font-bold md:text-[2.5rem] sm:text-[1.8rem]"
             >
               Hello, I'm David
             </h2>
             <TypeAnimation
               data-aos="fade-up"
               sequence={[ 
-                "Web Developer",
+               "Software Engineer (Frontend)",
                 2000,
-                "Fresher",
+                "React Js Developer",
                 2000,
-                "",
+                "Driven by Code & Creativity"
               ]}
               speed={30}
               wrapper="h2"
               repeat={Infinity}
-              className="text-white text-4xl font-bold sm:text-3xl"
+              className="text-white text-4xl font-bold md:text-[1.6rem] sm:text-sm"
             />
             <p
               // data-aos="fade-up"
-              className=" text-[1.3rem] font-medium w-full md:w-full text-black sm:text-[.95rem]"
+              className=" text-[1.3rem] font-medium w-full md:w-full text-black sm:text-[.89rem]"
             >
               {/* I originally build dynamic, efficient and scalable web applications as a MERN Full-Stack Developer skilled in MongoDB, Express.js, React.js, and Node.js. */}
-               I present my skills in frontend and backend development, and I reflect my dedication to growth and innovation. Tackling challenges energizes me and I enjoy learning new technologies while I collaborate on projects that make a difference. Let’s build something amazing. Connect with me.
+               I showcase my expertise in frontend and backend development, with a strong focus on building scalable and user-friendly applications. I am passionate about continuous learning, solving real-world challenges, and working with modern technologies. I enjoy collaborating on impactful projects that drive innovation and create meaningful user experiences. Let’s build something great together — feel free to connect.
             </p>
           </div>
           <div data-aos="fade-up" className="buttons flex gap-5">
-            <Link
-               to=""
-              className=" bg-black text-[1rem] text-white px-10 py-2 sm:px-8 rounded-lg font-bold  hover:text-[#11A295]"
+            <div
+               
+              className=" bg-black text-[1rem] text-white px-10 py-2 sm:py-1 sm:px-4 rounded-lg font-bold  hover:text-[#11A295]"
             >
-              <span> Hire Me</span>
-            </Link>
+              
+              <a className="items-center mt-4" href="#contact">Hire Me</a>
+            </div>
             <a
               href={resumePDF} download
-              className="flex items-center gap-2 border- text-[1rem] bg-white border-black px-7 py-2 sm:px-6 rounded-lg font-bold  hover:text-[#11A295]"
+              className="flex items-center gap-2 border- text-[1rem] bg-white border-black px-7 py-2 sm:px-4 rounded-lg font-bold  hover:text-[#11A295]"
             
             >
               <div className="flex items-center gap-1">

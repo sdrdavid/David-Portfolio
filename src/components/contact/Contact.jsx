@@ -1,8 +1,28 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { RiSendPlaneFill } from "react-icons/ri";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+
+  const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "service_ky0z7kc",
+    "template_8vmfk0k",
+    e.target,
+    "s79vrb27Ne_TXE7UA"
+  )
+  .then(() => {
+    alert("Message Sent ✅");
+  })
+  .catch(() => {
+    alert("Error ❌");
+  });
+
+  e.target.reset();
+};
   return (
     <div className="bg-gradient-to-r from-[#014C47] via-[#0A7972] to-[#11A295]">
     <div id="contact" className="container m-auto">
@@ -41,32 +61,33 @@ const Contact = () => {
           </div>
         </div>
         <div className="right flex-1">
-          <form
+          <form onSubmit={sendEmail}
             
             data-aos="zoom-in"
             
             className="flex justify-center items-center flex-col gap-5 w-[70%] md:w-[100%] sm:w-[95%] mx-auto"
-            action="mailto:sdrdavidraja@gmail.com"
+           
           >
             <input
               className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
               type="email"
               placeholder="e.g. example@email.com"
-              name=""
+              name="user_email"
             />
             <input
               className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
               type="text"
               placeholder="e.g. David"
-              name=""
+              name="user_name"
+          
             />
             <textarea
               className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
               rows="4"
               cols="50"
               placeholder="Write your message"
-              name=""
-              id=""
+              name="message"
+              id="message"
             />
             <button
               className="bg-gradient-to-r from-[#014C47] via-[#0A7972] to-[#11A295] w-full text-white font-semibold  p-2 mb-3 rounded-lg flex items-center justify-center space-x-1"

@@ -52,24 +52,25 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
 
   return (
     <div
-      className={`w-full mx-auto  fixed top-0 py-5 sm:py-6 z-30 ${
+
+      className={`w-full mx-auto  fixed top-0 py-5 sm:py-2 z-30 ${
         scrollPosition > 0 ? `bg-[#D9F2E6] shadow-md` : "bg-transparent"
       } `}
     >
-      <nav className=" container m-auto flex items-center justify-between">
+      <nav className=" container m-auto flex items-center justify-between md:mt-4 mt-2">
         <div data-aos="fade-down" className="logo">
         {/* <img src={LogoImg} alt="logo-navbar"  style={{width:"auto",height:"70px"}} ></img> */}
           <Link
             onClick={() => window.scrollTo(0, 0)}
             to="/"
-            className="text-4xl font-bold sm:text-3xl"
+            className="text-5xl font-bold sm:text-3xl flex mt-2"
           >
-            DAVID
+            DAVIDRAJA
           </Link>
         </div>
         <div
           data-aos="fade-down"
-          className="nav-items flex items-center space-x-11"
+          className="nav-items flex items-center space-x-2 "
         >
           {/* hamburger */}
           <button
@@ -80,7 +81,7 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
           </button>
 
           <ul
-            className={`flex items-center space-x-28 ${
+            className={`flex items-center space-x-20 font-bold ${
               !isOpen ? "md:flex" : "md:right-[0%]"
             } md:flex-col md:absolute m-auto  md:top-0 md:right-[-100%] md:w-[78%] right-56 md:h-screen md:bg-white `}
           >
@@ -94,7 +95,7 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
             {navItems.map((item) => (
               <li
                 key={item.id}
-                className="md:m-6 md:flex md:gap-6 md:items-center md:justify-center"
+                className="md:m-6 md:flex md:gap-6 md:items-center md:justify-center mt-4"
               >
                 <a
                   onClick={() => toggleNav(item.name)}
@@ -108,7 +109,7 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
               </li>
             ))}
             <a
-              href="mailto:sdrdavidraja@gmail.com"
+              href="#contact"
               className="bg-black text-[0.9rem] text-white px-10 py-1 rounded-lg font-bold  md:m-5 md:block md:mx-auto md:w-fit lg:px-3"
             >
               HIRE ME

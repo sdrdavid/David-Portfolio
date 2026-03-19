@@ -14,7 +14,7 @@ const Work = () => {
       <div 
       data-aos="fade-up"
        className="left flex-1 w-full">
-        <p className="text-black font-medium w-[100%]">
+        <p className="text-black font-medium  text-lg w-[100%]">  
           Here are some of my works.
         </p>
       </div>

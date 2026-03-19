@@ -12,7 +12,7 @@ const Resume = () => {
         <span className="h-[1.1px] right-0 absolute w-[92%] bg-gray-300 block"></span>
       </div>
       <div data-aos="fade-up" className="left flex-1 w-full">
-        <p className=" text-black font-medium w-[100%]">
+        <p className=" text-black font-medium  text-lg w-[100%]">
           Here are my experiences and qualifications.
         </p>
       </div>
@@ -36,19 +36,16 @@ const Resume = () => {
               {/* design */}
               <div className=" flex flex-col gap-1 sm:gap-1 border-2 border-[#D9F2E6] shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
                 <h1 className="text-[1.4rem] font-semibold sm:text-xl">
-                   Frontend Developer Internship Trainee
+                   Software Engineer (Frontend)
                 </h1>
                 <span className=" text-[.9rem] font-semibold text-[#D9F2E6] sm:text-base">
-                  Weboin Technologies pvt ltd
+                  Doodleblue Innovations Pvt Ltd
                 </span>
                 <span className=" text-[.9rem] font-semibold text-black sm:text-base">
-                  Nov 2024 - Present
+                  Mar 2026 – Present
                 </span>
                 <p className=" text-[.9rem] text-justify break-words text-white">
-                During my frontend developer internship, I worked with React.js and Next.js to build dynamic and responsive web applications.<br/>
-                I gained hands-on experience in developing UI components, optimizing performance with SSR/SSG, and integrating APIs.<br/>
-                This internship enhanced my skills in modern web development, state management, and deployment.<br/>
-Used Git and GitHub to manage versions.
+                Promoted from Frontend Developer Intern to Software Engineer, focusing on frontend development. I develop scalable and responsive web applications using React.js and Next.js, build reusable UI components to enhance user experience, integrate REST APIs to handle dynamic data, and use Redux Toolkit for efficient state management. I continuously optimize application performance and collaborate with cross-functional teams while following best practices in code quality, version control, and maintainability.
                 </p>
               </div>
             </div>
