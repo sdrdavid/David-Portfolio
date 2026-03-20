@@ -136,16 +136,16 @@ const Skills = ({ darkMode }) => {
     src="https://img.icons8.com/color/48/null/nodejs.png"
     alt="Node.js"
   />
-  <img
+  {/* <img
     className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]"
     src="https://img.icons8.com/color/48/null/express-js.png"
     alt="Express.js"
-  />
-  <img
+  /> */}
+  {/* <img
     className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]"
     src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/24/null/external-mongodb-a-cross-platform-document-oriented-database-program-logo-shadow-tal-revivo.png"
     alt="MongoDB"
-  />
+  /> */}
   <img
     className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]"
     src="https://img.icons8.com/color/48/null/git--v1.png"
@@ -156,16 +156,16 @@ const Skills = ({ darkMode }) => {
     src="https://img.icons8.com/color/48/null/github--v1.png"
     alt="GitHub"
   />
-  <img
+  {/* <img
     className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]"
     src="https://img.icons8.com/color/48/null/adobe-photoshop--v1.png"
     alt="Photoshop"
-  />
-  <img
+  /> */}
+  {/* <img
     className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]"
     src="https://img.icons8.com/color/48/null/microsoft-clipchamp--v1.png"
     alt="Clipchamp"
-  />
+  /> */}
 </div>
 
       </div>

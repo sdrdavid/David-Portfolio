@@ -1,15 +1,27 @@
 
-
+import myImage from "../assets/image.png";
+import myImage2 from "../assets/Rattha.png";
 export const data = [
   
   
   {
     id: 3,
-    img:'https://i.postimg.cc/BQrZqVDZ/Search-Engine.jpg',
-    title: "Product Compare AI",
+    img: myImage,
+    title: "Morempathy",
     desc: "",
-    link: "https://productcompare.netlify.app/",
-    git: "https://github.com/sdrdavid/product_ai",
+    link: "https://morempathy-2.vercel.app/",
+    git: "https://github.com/sdrdavid/morempathy",
+  },
+
+
+    
+  {
+    id: 4,
+    img: myImage2,
+    title: "Rattha",
+    desc: "",
+    link: "https://ratthaproject.vercel.app/",
+    git: "https://github.com/sdrdavid/morempathy",
   }
   
 ];
